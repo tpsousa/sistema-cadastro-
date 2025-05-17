@@ -1,6 +1,9 @@
 
 import function from *
 
+
+missoes = []
+
 #criando a funcao de criar um menu
 def menu():
  while(true):
@@ -13,11 +16,11 @@ def menu():
     opcao = input("escolha uma dessas opcoes");
     
     if opcao == '1':
-        cadastrarMissao();
+        cadastrarMissao(missao);
     elif opcao=='2':
-        ListarMissoes();
+        ListarMissoes(missao);
     elif opcao =='3':
-        SimularLancamento();
+        SimularLancamento(missao);
     elif opcao =='4':
         print("saindo....")
         break
